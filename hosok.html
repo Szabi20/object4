@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hosok.css">
+    <title>hosok</title>
+</head>
+<body>
+
+    <div id="hos"></div>
+
+
+    <script>
+        let heroes = [ 
+{firstName: "Ahsoka", lastName: "Tano", job: "padawan"},
+{firstName: "Boba", lastName: "Fett", job: "fejvadász"},
+{firstName: "Han", lastName: "Solo", job: "csempész"},
+{firstName: "Leia", lastName: "Organa", job: "szenátor"}, 
+{firstName: "Rap", lastName: "Kenedi", job: "padawan"},
+{firstName: "Nire", lastName: "Rusov", job: "csempész"}
+]
+
+let tartalom=``
+
+for (const heroe of heroes) {
+    tartalom+=`
+    <div class="kard">
+      ${heroe.firstName}<br>
+      ${heroe.lastName}<br>
+      ${heroe.job}
+        
+        </div>
+    `
+        document.getElementById('hos').innerHTML=tartalom
+
+}
+
+
+
+
+//document.body.innerHTML=heroes;
+    </script>
+</body>
+</html>
